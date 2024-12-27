@@ -1,0 +1,124 @@
+.experience {
+    padding: 4rem 2rem;
+    background-color: var(--color-background);
+  }
+  
+  .gradientText {
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background: var(--gradient-primary);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  .timelineItem {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  .timelineItem::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: var(--color-background);
+    border: 4px solid #ff6b6b;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .timelineItem:nth-child(odd) {
+    left: 0;
+  }
+  
+  .timelineItem:nth-child(even) {
+    left: 50%;
+  }
+  
+  .timelineItem:nth-child(even)::after {
+    left: -16px;
+  }
+  
+  .timelineContent {
+    padding: 20px 30px;
+    background-color: #f8f9fa;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .timelineContent h3 {
+    margin-top: 0;
+    color: #ff6b6b;
+  }
+  
+  .timelineIcon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gradient-secondary);
+    color: var(--color-text-light);
+    z-index: 2;
+  }
+  
+  .timelineItem:nth-child(odd) .timelineIcon {
+    right: -25px;
+  }
+  
+  .timelineItem:nth-child(even) .timelineIcon {
+    left: -25px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .timeline::after {
+      left: 31px;
+    }
+    
+    .timelineItem {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+    
+    .timelineItem::after {
+      left: 15px;
+    }
+    
+    .timelineItem:nth-child(even) {
+      left: 0%;
+    }
+    
+    .timelineItem:nth-child(odd) .timelineIcon,
+    .timelineItem:nth-child(even) .timelineIcon {
+      left: 6px;
+    }
+  }
+  
+  
