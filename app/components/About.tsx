@@ -48,15 +48,15 @@ export default function About() {
           </motion.div>
           <div className={styles.textContent}>
             <motion.p variants={itemVariants}>
-              Hello! I'm John Doe, a passionate Full Stack Developer with over 5 years of experience in creating web applications. 
+              Hello! I am John Doe, a passionate Full Stack Developer with over 5 years of experience in creating web applications. 
               I specialize in JavaScript technologies, particularly React for front-end and Node.js for back-end development.
             </motion.p>
             <motion.p variants={itemVariants}>
-              My journey in tech started with a Computer Science degree, and since then, I've been constantly learning and adapting to new technologies. 
-              I'm particularly interested in creating user-friendly, scalable applications that solve real-world problems.
+              My journey in tech started with a Computer Science degree, and since then, I ve been constantly learning and adapting to new technologies. 
+              I am particularly interested in creating user-friendly, scalable applications that solve real-world problems.
             </motion.p>
             <motion.p variants={itemVariants}>
-              When I'm not coding, you can find me hiking, reading tech blogs, or contributing to open-source projects.
+              When I am not coding, you can find me hiking, reading tech blogs, or contributing to open-source projects.
             </motion.p>
           </div>
         </div>

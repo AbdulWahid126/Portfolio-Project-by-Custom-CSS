@@ -65,7 +65,7 @@ export default function Experience() {
             <h3>Junior Developer</h3>
             <p>StartUp Co.</p>
             <p>2015 - 2017</p>
-            <p>Assisted in the development of the company's main product, focusing on front-end technologies.</p>
+            <p>Assisted in the development of the companys main product, focusing on front-end technologies.</p>
           </div>
         </motion.div>
       </motion.div>
